@@ -12,7 +12,17 @@ const Home = () => {
       <div>
         <Corousel />
       </div>
-      <div>
+      <div className="m-3"></div>
+      <div className="d-inline">
+        <Card />
+      </div>
+      <div className="d-inline">
+        <Card />
+      </div>
+      <div className="d-inline">
+        <Card />
+      </div>
+      <div className="d-inline">
         <Card />
       </div>
       <div>

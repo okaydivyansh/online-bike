@@ -7,6 +7,7 @@ const Corousel = () => {
         id="carouselExampleFade"
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
+        style={{ objectFit: "contain !important" }}
       >
         <div className="carousel-inner" id="carousel">
           <div className="carousel-caption" style={{ zIndex: "10" }}>
@@ -17,7 +18,7 @@ const Corousel = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-dark text-white" type="submit">
                 Search
               </button>
             </form>
