@@ -9,7 +9,7 @@ const Corousel = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner" id="carousel">
-          <div className="carousel-caption">
+          <div className="carousel-caption" style={{ zIndex: "10" }}>
             <form className="d-flex">
               <input
                 className="form-control me-2"
@@ -27,6 +27,7 @@ const Corousel = () => {
             <img
               src="https://source.unsplash.com/random/900x700/?RoyalEnfield"
               className="d-block w-100"
+              style={{ filter: "brightness(30%)" }}
               alt="..."
             />
           </div>
@@ -34,6 +35,7 @@ const Corousel = () => {
             <img
               src="https://source.unsplash.com/random/900x700/?motorbikes"
               className="d-block w-100"
+              style={{ filter: "brightness(30%)" }}
               alt="..."
             />
           </div>
@@ -41,6 +43,7 @@ const Corousel = () => {
             <img
               src="https://source.unsplash.com/random/900x700/?motorbike"
               className="d-block w-100"
+              style={{ filter: "brightness(30%)" }}
               alt="..."
             />
           </div>
