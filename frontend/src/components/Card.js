@@ -1,5 +1,16 @@
 import React from "react";
+import { useCart, useDispatchCart } from "./ContextReducer";
 
+let dispatch = useDispatchCart();
+let data = useCart()
+const [qty,setQty] = useState(1)
+const [size,setSize] = useState("")
+
+const handleAddToCart = async () => {
+  await dispatch({type:"ADD",id:props.foodItem._id, name:props.foodItem.name, price:props.finalPrince, qty:qty, size})
+  console.log(data)
+}
+let finalPrince = qty * parseInt(options[size]);
 const Card = () => {
   return (
     <div className="card mt-3" style={{ width: "18rem", maxHeight: "360px" }}>
@@ -26,6 +37,8 @@ const Card = () => {
               <option value="full">Full</option>
             </select> */}
           <div className="d-inline h-100 fs-5">Total Price</div>
+            <hr></hr>
+            <button className={'btn btn-success justify-center ms-2'} onClick={handleAddToCart}>Add to Cart</button>
         </div>
       </div>
     </div>
